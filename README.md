@@ -81,13 +81,13 @@ Models were evaluated using performance metrics such as:RMSE, MAE, Accuracy, For
 
 🤖 Machine Learning Models Used
 
-📈 Prophet - Used for time-series demand forecasting and trend analysis.
+1.Prophet - Used for time-series demand forecasting and trend analysis.
 
-📊 ARIMA & SARIMAX - Statistical forecasting models used for analyzing seasonal and historical demand patterns.
+2. ARIMA & SARIMAX - Statistical forecasting models used for analyzing seasonal and historical demand patterns.
 
-🌲 Random Forest - Ensemble learning algorithm used for predictive analysis and demand estimation.
+3. Random Forest - Ensemble learning algorithm used for predictive analysis and demand estimation.
 
-⚡ XGBoost - Advanced boosting algorithm used for accurate forecasting and prediction.
+4. XGBoost - Advanced boosting algorithm used for accurate forecasting and prediction.
 
 📊 Features of the System
 
