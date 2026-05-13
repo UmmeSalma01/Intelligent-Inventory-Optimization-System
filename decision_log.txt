@@ -1,0 +1,191 @@
+﻿
+============================================================
+STEP 4: TRAINING INVENTORY DECISION MODEL
+============================================================
+
+[1/4] Loading demand model predictions...
+[OK] Model loaded from: C:\xampp\htdocs\inventory\ml_pipeline\models\demand_model.joblib
+
+[2/4] Preprocessing & feature engineering...
+
+============================================================
+STEP 1: DATA PREPROCESSING
+============================================================
+[OK] Stock data loaded: 2209 rows, 21 products
+[OK] Transaction data loaded: 9994 rows, date range: 2015-01-02 to 2018-12-30
+[OK] Loss data loaded: 2209 rows
+[OK] Waste data loaded: 1370 rows
+[OK] Daily sales aggregated: 30639 rows (21 products x 1459 days)
+[OK] Product info computed for 21 products
+[OK] All data merged: 30639 rows, 13 columns
+
+--- Data Quality Report ---
+Total rows: 30639
+Missing values: None
+Products: 21
+Date range: 2015-01-02 to 2018-12-30
+
+============================================================
+STEP 2: FEATURE ENGINEERING
+============================================================
+[OK] Time features added: day, month, weekday, is_weekend, day_of_year, week_of_year, quarter
+[OK] Lag features added: ['lag_1', 'lag_7', 'lag_14']
+[OK] Rolling features added: ['rolling_mean_7d', 'rolling_std_7d', 'rolling_mean_14d', 'rolling_std_14d', 'rolling_mean_30d', 'rolling_std_30d']
+[OK] Loss/waste rolling features added (window=30d)
+[OK] Inventory features added: avg_daily_sales, stock_to_sales_ratio
+
+[OK] Feature engineering complete: 30639 rows, 33 columns
+
+[3/4] Computing decision outputs...
+
+[4/4] Training risk classifier...
+
+--- Training XGBoost Risk Classifier ---
+[OK] Risk labels created. Distribution (per product, latest):
+    High: 18
+    Low: 3
+python : Traceback (most 
+recent call last):
+At line:1 char:1
++ python 
+train_decision_model.py 
+2>&1 | Out-File -Encoding 
+utf8 decisio ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (T  
+  raceback (most recent   
+  call last)::String)     
+[], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+  File "C:\xampp\htdocs\in
+ventory\ml_pipeline\train_
+decision_model.py", line 
+199, in <module>
+    model_bundle = 
+train_decision_model()
+  File "C:\xampp\htdocs\in
+ventory\ml_pipeline\train_
+decision_model.py", line 
+172, in 
+train_decision_model
+    train_risk_classifier(
+featured)
+    ~~~~~~~~~~~~~~~~~~~~~^
+^^^^^^^^^
+  File "C:\xampp\htdocs\in
+ventory\ml_pipeline\train_
+decision_model.py", line 
+130, in 
+train_risk_classifier
+    
+grid_search.fit(X_train, 
+y_train, 
+sample_weight=w_train)
+    ~~~~~~~~~~~~~~~^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^
+  File "C:\Users\karch\App
+Data\Local\Programs\Python
+\Python314\Lib\site-packag
+es\sklearn\base.py", line 
+1336, in wrapper
+    return 
+fit_method(estimator, 
+*args, **kwargs)
+  File "C:\Users\karch\App
+Data\Local\Programs\Python
+\Python314\Lib\site-packag
+es\sklearn\model_selection
+\_search.py", line 1053, 
+in fit
+    self._run_search(evalu
+ate_candidates)
+    ~~~~~~~~~~~~~~~~^^^^^^
+^^^^^^^^^^^^^^^
+  File "C:\Users\karch\App
+Data\Local\Programs\Python
+\Python314\Lib\site-packag
+es\sklearn\model_selection
+\_search.py", line 1612, 
+in _run_search
+    evaluate_candidates(Pa
+rameterGrid(self.param_gri
+d))
+    ~~~~~~~~~~~~~~~~~~~^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^
+  File "C:\Users\karch\App
+Data\Local\Programs\Python
+\Python314\Lib\site-packag
+es\sklearn\model_selection
+\_search.py", line 1030, 
+in evaluate_candidates
+    _warn_or_raise_about_f
+it_failures(out, 
+self.error_score)
+    ~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~^^^^^^^^^^^^^^^
+^^^^^^^^
+  File "C:\Users\karch\App
+Data\Local\Programs\Python
+\Python314\Lib\site-packag
+es\sklearn\model_selection
+\_validation.py", line 
+479, in _warn_or_raise_abo
+ut_fit_failures
+    raise ValueError(all_f
+its_failed_message)
+ValueError: 
+All the 72 fits failed.
+It is very likely that 
+your model is 
+misconfigured.
+You can try to debug the 
+error by setting 
+error_score='raise'.
+
+Below are more details 
+about the failures:
+--------------------------
+--------------------------
+--------------------------
+--
+72 fits failed with the 
+following error:
+Traceback (most recent 
+call last):
+  File "C:\Users\karch\App
+Data\Local\Programs\Python
+\Python314\Lib\site-packag
+es\sklearn\model_selection
+\_validation.py", line 
+833, in _fit_and_score
+    
+estimator.fit(X_train, 
+y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\karch\App
+Data\Local\Programs\Python
+\Python314\Lib\site-packag
+es\xgboost\core.py", line 
+751, in inner_f
+    return func(**kwargs)
+  File "C:\Users\karch\App
+Data\Local\Programs\Python
+\Python314\Lib\site-packag
+es\xgboost\sklearn.py", 
+line 1761, in fit
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Invalid 
+classes inferred from 
+unique values of `y`.  
+Expected: [0 1], got [0 2]
+

@@ -1,0 +1,77 @@
+﻿
+============================================================
+STEP 3: TRAINING DEMAND FORECASTING MODEL
+============================================================
+
+============================================================
+STEP 1: DATA PREPROCESSING
+============================================================
+python : Traceback (most 
+recent call last):
+At line:1 char:1
++ python 
+train_demand_model.py 
+2>&1 | Out-File -Encoding 
+utf8 demand_tr ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (T  
+  raceback (most recent   
+  call last)::String)     
+[], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+  File "C:\xampp\htdocs\in
+ventory\ml_pipeline\train_
+demand_model.py", line 
+246, in <module>
+    model_bundle = 
+train_demand_model()
+  File "C:\xampp\htdocs\in
+ventory\ml_pipeline\train_
+demand_model.py", line 
+130, in train_demand_model
+    merged, product_info, 
+trans_df = 
+run_preprocessing()
+                          
+           
+~~~~~~~~~~~~~~~~~^^
+  File "C:\xampp\htdocs\in
+ventory\ml_pipeline\data_p
+reprocessing.py", line 
+264, in run_preprocessing
+    stock_df = 
+load_stock_data()
+  File "C:\xampp\htdocs\in
+ventory\ml_pipeline\data_p
+reprocessing.py", line 
+61, in load_stock_data
+    print(f"[\u2713] 
+Stock data loaded: 
+{df.shape[0]} rows, {df['p
+roduct_id'].nunique()} 
+products")
+    ~~~~~^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
+  File "C:\Users\karch\App
+Data\Local\Programs\Python
+\Python314\Lib\encodings\c
+p1252.py", line 19, in 
+encode
+    return codecs.charmap_
+encode(input,self.errors,e
+ncoding_table)[0]
+           ~~~~~~~~~~~~~~~
+~~~~~~^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
+UnicodeEncodeError: 
+'charmap' codec can't 
+encode character '\u2713' 
+in position 1: character 
+maps to <undefined>

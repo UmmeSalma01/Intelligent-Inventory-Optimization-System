@@ -1,0 +1,47 @@
+﻿=== STOCK MASTER ===
+Columns: ['Unnamed: 0', 'Stock Code', 'Product Code', 'Manufacturing Date', 'Expiry Date', 'Initial_Qty', 'Remaining_Qty', 'Arrival Date', 'Shelf Life', 'Lead Time']
+Shape: (2209, 10)
+Stock codes: ['BAK-BIS', 'BAK-BRE', 'BAK-CAK', 'BEV-HEA', 'BEV-SOF', 'EGG-CHI', 'EGG-EGG', 'EGG-FIS', 'EGG-MUT', 'FOO-ATT', 'FOO-DAL', 'FOO-ORG', 'FOO-RIC', 'FRU-FRE', 'FRU-ORG', 'OIL-EDI', 'OIL-MAS', 'OIL-SPI', 'SNA-CHO', 'SNA-COO', 'SNA-NOO']
+Count: 21
+
+=== TRANSACTION MASTER ===
+Columns: ['Unnamed: 0', 'Stock Code', 'Order ID', 'Category', 'Sub Category', 'City', 'Region', 'Sales', 'Discount', 'Profit', 'Day of week', 'IsWeekend', 'Weather', 'Unit Cost', 'Units Sold', 'Date', 'Week', 'Rolling_avg_4weeks', 'Product Code']
+Shape: (9994, 19)
+Date range: 2015-01-02 to 2018-12-30
+Stock codes: ['BAK-BIS', 'BAK-BRE', 'BAK-CAK', 'BEV-HEA', 'BEV-SOF', 'EGG-CHI', 'EGG-EGG', 'EGG-FIS', 'EGG-MUT', 'FOO-ATT', 'FOO-DAL', 'FOO-ORG', 'FOO-RIC', 'FRU-FRE', 'FRU-ORG', 'OIL-EDI', 'OIL-MAS', 'OIL-SPI', 'SNA-CHO', 'SNA-COO', 'SNA-NOO']
+Count: 21
+
+=== LOST TABLE ===
+Columns: ['Unnamed: 0', 'Date', 'Stock Code', 'Lost_Qty', 'Lost_Profit']
+Shape: (2209, 5)
+Date range: 2015-01-08 to 2018-12-30
+Stock codes: ['BAK-BIS', 'BAK-BRE', 'BAK-CAK', 'BEV-HEA', 'BEV-SOF', 'EGG-CHI', 'EGG-EGG', 'EGG-FIS', 'EGG-MUT', 'FOO-ATT', 'FOO-DAL', 'FOO-ORG', 'FOO-RIC', 'FRU-FRE', 'FRU-ORG', 'OIL-EDI', 'OIL-MAS', 'OIL-SPI', 'SNA-CHO', 'SNA-COO', 'SNA-NOO']
+
+=== WASTE TABLE ===
+Columns: ['Unnamed: 0', 'Date', 'Stock Code', 'Product Code', 'Expired_Qty', 'Waste_Lost_Profit']
+Shape: (1370, 6)
+Date range: 2015-01-06 to 2018-12-30
+Stock codes: ['BAK-BRE', 'BAK-CAK', 'EGG-CHI', 'EGG-EGG', 'EGG-FIS', 'EGG-MUT', 'FOO-ATT', 'FOO-RIC', 'FRU-FRE', 'FRU-ORG', 'SNA-NOO']
+
+=== LATEST STOCK PER CODE ===
+BAK-BIS: 49 batches, latest remaining_qty=401, lead_time=46.0, shelf_life=270.0
+BAK-BRE: 204 batches, latest remaining_qty=91, lead_time=1.0, shelf_life=4.0
+BAK-CAK: 220 batches, latest remaining_qty=4, lead_time=1.0, shelf_life=3.0
+BEV-HEA: 49 batches, latest remaining_qty=53, lead_time=99.0, shelf_life=365.0
+BEV-SOF: 64 batches, latest remaining_qty=0, lead_time=42.0, shelf_life=180.0
+EGG-CHI: 218 batches, latest remaining_qty=0, lead_time=1.0, shelf_life=3.0
+EGG-EGG: 122 batches, latest remaining_qty=18, lead_time=4.0, shelf_life=21.0
+EGG-FIS: 245 batches, latest remaining_qty=0, lead_time=1.0, shelf_life=2.0
+EGG-MUT: 223 batches, latest remaining_qty=0, lead_time=1.0, shelf_life=3.0
+FOO-ATT: 50 batches, latest remaining_qty=178, lead_time=50.0, shelf_life=90.0
+FOO-DAL: 43 batches, latest remaining_qty=27, lead_time=71.0, shelf_life=365.0
+FOO-ORG: 59 batches, latest remaining_qty=79, lead_time=2.0, shelf_life=180.0
+FOO-RIC: 26 batches, latest remaining_qty=170, lead_time=98.0, shelf_life=365.0
+FRU-FRE: 195 batches, latest remaining_qty=12, lead_time=1.0, shelf_life=5.0
+FRU-ORG: 197 batches, latest remaining_qty=7, lead_time=1.0, shelf_life=5.0
+OIL-EDI: 38 batches, latest remaining_qty=70, lead_time=65.0, shelf_life=365.0
+OIL-MAS: 46 batches, latest remaining_qty=0, lead_time=30.0, shelf_life=365.0
+OIL-SPI: 34 batches, latest remaining_qty=47, lead_time=108.0, shelf_life=540.0
+SNA-CHO: 42 batches, latest remaining_qty=74, lead_time=55.0, shelf_life=180.0
+SNA-COO: 53 batches, latest remaining_qty=50, lead_time=46.0, shelf_life=240.0
+SNA-NOO: 32 batches, latest remaining_qty=219, lead_time=71.0, shelf_life=240.0

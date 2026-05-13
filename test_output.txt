@@ -1,0 +1,29 @@
+﻿[OK] Model loaded from: C:\xampp\htdocs\inventory\ml_pipeline\models\demand_model.joblib
+[OK] Model loaded from: C:\xampp\htdocs\inventory\ml_pipeline\models\decision_model.joblib
+
+==========================================================================================
+INVENTORY INSIGHTS - PREDICTION SUMMARY
+==========================================================================================
+product_id  predicted_demand_next_30_days  stock_duration_days  reorder_quantity  reorder_time_days stock_risk
+   BAK-BIS                            765                 15.7              1014                0.0       High
+   SNA-CHO                            296                  7.5               562                0.0       High
+   OIL-SPI                             36                 39.2                97                0.0       High
+   OIL-MAS                             58                  0.0                78                0.0       High
+   OIL-EDI                            102                 20.6               191                0.0       High
+   FRU-ORG                            313                  0.7                85                0.0       High
+   FRU-FRE                            599                  0.6               162                0.0       High
+   FOO-RIC                            284                 18.0               870                0.0       High
+   SNA-COO                            182                  8.2               288                0.0       High
+   FOO-DAL                            131                  6.2               331                0.0       High
+   EGG-MUT                             17                  0.0                 6                0.0       High
+   EGG-FIS                             48                  0.0                15                0.0       High
+   EGG-EGG                            227                  2.4                76                0.0       High
+   EGG-CHI                             44                  0.0                14                0.0       High
+   BEV-SOF                            783                  0.0              1330                0.0       High
+   BEV-HEA                             62                 25.6               173                0.0       High
+   FOO-ATT                            340                 15.7               507                0.0       High
+   SNA-NOO                            909                  7.2              2271                0.0       High
+   FOO-ORG                            157                 15.1                 0               10.8        Low
+   BAK-CAK                             58                  2.1                14                0.0        Low
+   BAK-BRE                            517                  5.3                58                3.6        Low
+==========================================================================================
