@@ -8,9 +8,13 @@ This project combines data analytics, forecasting models, and visualization tech
 🎯 Objectives
 
 Forecast future product demand accurately
+
 Reduce inventory wastage and stockouts
+
 Improve inventory planning and business decision-making
+
 Compare multiple forecasting and machine learning models
+
 Build an analytics-driven inventory optimization system
 
 📂 Dataset Information
@@ -52,10 +56,10 @@ XGBoost
 Random Forest
 
 🔄 Project Workflow
-1. Data Collection
+1. Data Collection - 
 Collected historical inventory and sales data for analysis and forecasting.
 
-2. Data Preprocessing
+2. Data Preprocessing - 
 Handled missing values
 Removed duplicates
 Converted date columns
@@ -63,13 +67,13 @@ Performed feature engineering
 Prepared data for model training
 
 3. Exploratory Data Analysis (EDA)
-Performed EDA to identify:
+Performed EDA to identify - 
 Sales trends
 Seasonal demand patterns
 Inventory behavior
 Product performance
 
-4. Model Building
+4. Model Building - 
 Implemented and compared multiple forecasting and machine learning models:
 Prophet
 ARIMA
@@ -83,8 +87,11 @@ Models were evaluated using performance metrics such as:RMSE, MAE, Accuracy, For
 🤖 Machine Learning Models Used
 
 1.Prophet - Used for time-series demand forecasting and trend analysis.
+
 2. ARIMA & SARIMAX - Statistical forecasting models used for analyzing seasonal and historical demand patterns.
+
 3. Random Forest - Ensemble learning algorithm used for predictive analysis and demand estimation.
+
 4. XGBoost - Advanced boosting algorithm used for accurate forecasting and prediction.
 
 📊 Features of the System
