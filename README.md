@@ -1,18 +1,15 @@
-📦 Intelligent Inventory Optimization & Demand Analytics System
+📦 INTELLIGENT INVENTORY OPTIMIZATION & DEMAND ANALYRICS SYSTEM
 
 📌 Project Overview
+
 The Intelligent Inventory Optimization & Demand Analytics System is a machine learning-based project developed to improve inventory management and demand forecasting for retail businesses. The system analyzes historical sales and inventory data to predict future demand, reduce stock shortages, minimize overstocking, and support data-driven business decisions.
 This project combines data analytics, forecasting models, and visualization techniques to help businesses optimize inventory operations efficiently.
 
 🎯 Objectives
 Forecast future product demand accurately
-
 Reduce inventory wastage and stockouts
-
 Improve inventory planning and business decision-making
-
 Compare multiple forecasting and machine learning models
-
 Build an analytics-driven inventory optimization system
 
 📂 Dataset Information
