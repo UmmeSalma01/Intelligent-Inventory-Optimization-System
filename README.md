@@ -5,6 +5,7 @@
 The Intelligent Inventory Optimization & Demand Analytics System is a machine learning-based project developed to improve inventory management and demand forecasting for retail businesses. The system analyzes historical sales and inventory data to predict future demand, reduce stock shortages, minimize overstocking, and support data-driven business decisions.
 This project combines data analytics, forecasting models, and visualization techniques to help businesses optimize inventory operations efficiently.
 
+
 🎯 Objectives
 
 Forecast future product demand accurately
@@ -16,6 +17,7 @@ Improve inventory planning and business decision-making
 Compare multiple forecasting and machine learning models
 
 Build an analytics-driven inventory optimization system
+
 
 📂 Dataset Information
 
@@ -30,6 +32,7 @@ Inventory levels
 Demand trends
 
 Date and time-based sales information
+
 
 ⚙️ Technologies Used
 
@@ -54,6 +57,7 @@ Statsmodels
 XGBoost
 
 Random Forest
+
 
 🔄 Project Workflow
 1. Data Collection - 
@@ -84,15 +88,17 @@ XGBoost
 5. Model Evaluation
 Models were evaluated using performance metrics such as:RMSE, MAE, Accuracy, Forecast comparison
 
+
 🤖 Machine Learning Models Used
 
-1.Prophet - Used for time-series demand forecasting and trend analysis.
+ 1.Prophet - Used for time-series demand forecasting and trend analysis.
 
 2. ARIMA & SARIMAX - Statistical forecasting models used for analyzing seasonal and historical demand patterns.
 
 3. Random Forest - Ensemble learning algorithm used for predictive analysis and demand estimation.
 
 4. XGBoost - Advanced boosting algorithm used for accurate forecasting and prediction.
+
 
 📊 Features of the System
 
@@ -108,6 +114,7 @@ Business Insights Generation
 
 Predictive Analytics
 
+
 📷 Future Improvements
 
 Real-time inventory tracking
@@ -121,6 +128,7 @@ Mobile-friendly dashboard
 Integration with ERP systems
 
 Advanced deep learning forecasting models
+
 
 ✅ Conclusion
 
