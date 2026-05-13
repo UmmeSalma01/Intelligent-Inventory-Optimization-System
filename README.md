@@ -61,6 +61,7 @@ XGBoost
 Models were evaluated using performance metrics such as:RMSE, MAE, Accuracy, Forecast comparison
 
 🤖 Machine Learning Models Used
+
 📈 Prophet
 Used for time-series demand forecasting and trend analysis.
 
